@@ -6,7 +6,7 @@
  * Move the cursor vertically over each bar to alter its hue. 
  */
  
-int barWidth = 10;
+int barHeight = 10;
 int lastBar = -1;
 
 void setup() 
@@ -19,11 +19,11 @@ void setup()
 
 void draw() 
 {
-  int whichBar = mouseX / barWidth;
+  int whichBar = mouseY / barHeight;
   if (whichBar != lastBar) {
-    int barX = whichBar * barWidth;
-    fill(mouseY, height, height);
-    rect(barX, 0, barWidth, height);
+    int barY = whichBar * barHeight;
+    fill(mouseX, width, width);
+    rect(barY, 0, barHeight, width);
     lastBar = whichBar;
   }
 }
