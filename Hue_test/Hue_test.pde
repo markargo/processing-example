@@ -23,7 +23,7 @@ void draw()
   if (whichBar != lastBar) {
     int barY = whichBar * barHeight;
     fill(mouseX, width, width);
-    rect(barY, 0, barHeight, width);
+    rect(0, barY, width, barHeight);
     lastBar = whichBar;
   }
 }
