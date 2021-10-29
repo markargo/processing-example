@@ -6,12 +6,12 @@
  * Move the cursor vertically over each bar to alter its hue. 
  */
  
-int barWidth = 20;
+int barWidth = 10;
 int lastBar = -1;
 
 void setup() 
 {
-  size(640, 360);
+  size(500, 500);
   colorMode(HSB, height, height, height);  
   noStroke();
   background(0);
